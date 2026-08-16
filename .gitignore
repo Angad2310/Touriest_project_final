@@ -1,0 +1,64 @@
+# Flutter / Dart
+tourist_safety/.dart_tool/
+tourist_safety/.packages
+tourist_safety/.pub-cache/
+tourist_safety/.pub/
+tourist_safety/build/
+tourist_safety/.flutter-plugins
+tourist_safety/.flutter-plugins-dependencies
+tourist_safety/.metadata
+tourist_safety/android/.gradle/
+tourist_safety/android/app/build/
+tourist_safety/android/build/
+tourist_safety/android/local.properties
+tourist_safety/ios/Pods/
+tourist_safety/ios/.symlinks/
+tourist_safety/ios/Flutter/Flutter.framework
+tourist_safety/ios/Flutter/Flutter.podspec
+tourist_safety/ios/Runner.xcworkspace/
+tourist_safety/ios/Flutter/Generated.xcconfig
+tourist_safety/ios/Flutter/flutter_export_environment.sh
+*.iml
+*.lock
+!pubspec.lock
+
+# Backend Python
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.pyc
+backend/.env
+backend/venv/
+backend/.venv/
+backend/*.egg-info/
+
+# Dashboard Node
+dashboard/node_modules/
+dashboard/dist/
+dashboard/.env
+dashboard/.env.local
+
+# IDE
+.idea/
+.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Secrets
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+google-services.json
+GoogleService-Info.plist

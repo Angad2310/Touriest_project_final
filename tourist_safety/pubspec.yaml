@@ -1,0 +1,83 @@
+name: tourist_safety
+description: "Autonomous Tourist Safety Mobile App — protects tourists with SOS, live tracking, offline BLE mesh, and Edge AI threat detection."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ─── UI / Icons ──────────────────────────────────────────
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+
+  # ─── State Management ───────────────────────────────────
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # ─── Routing ─────────────────────────────────────────────
+  go_router: ^14.8.1
+
+  # ─── Code Generation (models) ───────────────────────────
+  freezed_annotation: ^3.0.0
+  json_annotation: ^4.9.0
+
+  # ─── Location ────────────────────────────────────────────
+  geolocator: ^13.0.2
+  # geocoding: removed for Phase 0 — SOS uses raw GPS coords only.
+  # Add back in Phase 2 when address display is needed.
+
+  # ─── Maps ────────────────────────────────────────────────
+  # Using flutter_map (free, no API key) for initial development.
+  # Can switch to google_maps_flutter later with an API key.
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # ─── Permissions ─────────────────────────────────────────
+  permission_handler: ^11.3.1
+
+  # ─── Local Storage ──────────────────────────────────────
+  drift: ^2.22.1
+  sqlite3_flutter_libs: ^0.5.28
+  path_provider: ^2.1.5
+  path: ^1.9.1
+
+  # ─── Networking ──────────────────────────────────────────
+  dio: ^5.7.0
+  web_socket_channel: ^3.0.2
+  connectivity_plus: ^6.1.1
+
+  # ─── Background Execution ───────────────────────────────
+  flutter_foreground_task: ^8.12.0
+
+  # ─── Security / Encryption ─────────────────────────────
+  encrypt: ^5.0.3
+  flutter_secure_storage: ^9.2.4
+
+  # ─── Utilities ──────────────────────────────────────────
+  uuid: ^4.5.1
+  intl: ^0.20.2
+  logger: ^2.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # ─── Code Generation ────────────────────────────────────
+  build_runner: ^2.4.14
+  freezed: ^3.0.0
+  json_serializable: ^6.9.4
+  riverpod_generator: ^2.6.3
+  drift_dev: ^2.22.1
+
+flutter:
+  uses-material-design: true
+
+  # Assets will be added as needed:
+  # assets:
+  #   - assets/images/
+  #   - assets/models/    # TFLite models (Phase 2)
